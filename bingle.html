@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ <head> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+  <style>html{visibility: hidden;opacity:0;}</style> 
+  <meta charset="UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <meta name="theme-color" content="#f7f7f7" /> 
+  <title>Bingle - Coslyk</title> 
+  <style>
+    .prj-grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 1rem 3rem;
+      grid-template-areas: "prj-fig prj-info" "prj-info2 prj-fig2"
+    }
+    .prj-fig { grid-area: prj-fig; }
+    .prj-fig2 { grid-area: prj-fig2; }
+    .prj-info { grid-area: prj-info; }
+    .prj-info2 { grid-area: prj-info2; }
+  </style> 
+ </head> 
+ <body> 
+  <div class="grid-container"> 
+   <div class="nav"> 
+    <div class="logo"> 
+     <img class="logo" src="files/me.png" /> 
+    </div> 
+    <div class="introduction"> 
+     <p>I'm a part-time App developer.</p> 
+    </div> 
+    <header class="header"> 
+     <input class="menu-btn" type="checkbox" id="menu-btn" /> 
+     <label class="menu-icon" for="menu-btn"><span class="navicon">⚙</span></label> 
+     <ul class="menu"> 
+      <li><a href="index.html">Home</a></li> 
+      <li><a href="projects.html">Projects</a></li> 
+      <li><a href="donate.html">Donate</a></li> 
+      <li><a href="https://github.com/coslyk">GitHub</a></li> 
+     </ul> 
+    </header> 
+    <div class="footer"> 
+     <div class="info"> 
+      <div class="copyright">
+       <b>coslyk</b> - 
+       <span id="year">2020</span>
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="body">
+    <h1>Bingle</h1>
+    <p>A simple wallpaper downloader that can download images from Bing etc.</p>
+    <img class="screenshot" src="files/bingle-screenshot.png" />
+    <p>With Bingle, you can:</p>
+    <ul>
+      <li>View and download wallpapers from internet</li>
+      <li>Manage your local wallpapers</li>
+    </ul>
+    <p>Bingle supports multiple websites, currently:</p>
+    <ul>
+      <li>Bing</li>
+    </ul>
+    <h2 id="install">Installation</h2>
+    <h3>Linux</h3>
+    <p>Download AppImage from the <a href="https://github.com/coslyk/bingle/releases/latest" class="external">release</a>
+      page.
+    </p>
+    <h3>Debian</h3>
+    <p>Add <a href="https://github.com/coslyk/debianopt-repo" class="external">DebianOpt</a> repository, then install with
+      <code>sudo apt install bingle</code>.
+    </p>
+    <h2>Development</h2>
+    <p>The source is managed on <a href="https://github.com/coslyk/bingle" class="external">GitHub</a>. If you encounter any
+      bugs or want to suggest improvements, please use the <a href="https://github.com/coslyk/bingle/issues"
+        class="external">issue tracker</a> there.
+    </p>
+    <h2>License</h2>
+    <p>Bingle is free software licensed under MIT License. See the <a
+        href="https://github.com/coslyk/bingle/blob/master/LICENSE" class="external">LICENSE</a> file for details.
+    </p>
+   </div> 
+   <link rel="stylesheet" href="files/main.css" /> 
+  </div>
+ </body>
+</html>

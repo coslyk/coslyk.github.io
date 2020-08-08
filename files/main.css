@@ -616,10 +616,15 @@ div.carousel a.carousel-link-right {
     margin-top: 232px;
     outline: none;
 }
-div.carousel div.carousel-item img.screenshot {
+div.carousel div.carousel-item {
+    display: block;
+}
+
+img.screenshot {
     box-shadow: 5px 5px 5px rgba(0,0,0,.5);
     display: block;
 }
+
 div.carousel div.carousel-item p {
     text-align: center;
     margin-top: 5px;

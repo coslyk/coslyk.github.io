@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ <head> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+  <style>html{visibility: hidden;opacity:0;}</style> 
+  <meta charset="UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <meta name="theme-color" content="#f7f7f7" /> 
+  <title>MoonPlayer - Coslyk</title> 
+  <style>
+    .prj-grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 1rem 3rem;
+      grid-template-areas: "prj-fig prj-info" "prj-info2 prj-fig2"
+    }
+    .prj-fig { grid-area: prj-fig; }
+    .prj-fig2 { grid-area: prj-fig2; }
+    .prj-info { grid-area: prj-info; }
+    .prj-info2 { grid-area: prj-info2; }
+  </style> 
+ </head> 
+ <body> 
+  <div class="grid-container"> 
+   <div class="nav"> 
+    <div class="logo"> 
+     <img class="logo" src="files/me.png" /> 
+    </div> 
+    <div class="introduction"> 
+     <p>I'm a part-time App developer.</p> 
+    </div> 
+    <header class="header"> 
+     <input class="menu-btn" type="checkbox" id="menu-btn" /> 
+     <label class="menu-icon" for="menu-btn"><span class="navicon">⚙</span></label> 
+     <ul class="menu"> 
+      <li><a href="index.html">Home</a></li> 
+      <li><a href="projects.html">Projects</a></li> 
+      <li><a href="https://github.com/coslyk">GitHub</a></li> 
+      <li><a href="donate.html">Donate</a></li> 
+     </ul> 
+    </header> 
+    <div class="footer"> 
+     <div class="info"> 
+      <div class="copyright">
+       <b>coslyk</b> - 
+       <span id="year">2020</span>
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="body">
+    <h1 style="margin-top: 2rem;">MoonPlayer</h1>
+    <p class="tagline">All-in-One video player that can play videos from Youtube, Bilibili etc. as well as local videos.</p>
+    <div class="carousel">
+      <span class="carousel-target" id="carousel-target1"></span>
+      <span class="carousel-target" id="carousel-target2"></span>
+      <span class="carousel-target" id="carousel-target3"></span>
+      <span class="carousel-target" id="carousel-target4"></span>
+      <span class="carousel-target" id="carousel-target5"></span>
+      <span class="carousel-target" id="carousel-target6"></span>
+      <div id="carousel-item1" class="carousel-item">
+        <a href="#carousel-target1" class="carousel-link-left"><img src="files/prev.png"></a>
+        <a href="#carousel-target2" class="carousel-link-right"><img src="files/next.png"></a>
+        <img id="screenshot1" class="screenshot" src="files/moonplayer-play.png">
+        <p>Play videos with an elegant and convenient experience!</p>
+      </div>
+      <div id="carousel-item2" class="carousel-item">
+        <a href="#carousel-target1" class="carousel-link-left"><img src="files/prev.png"></a>
+        <a href="#carousel-target3" class="carousel-link-right"><img src="files/next.png"></a>
+        <img id="screenshot2" class="screenshot" src="files/moonplayer-explorer.png">
+        <p>Explore videos from your favorite websites!</p>
+      </div>
+      <div id="carousel-item3" class="carousel-item">
+        <a href="#carousel-target2" class="carousel-link-left"><img src="files/prev.png"></a>
+        <a href="#carousel-target4" class="carousel-link-right"><img src="files/next.png"></a>
+        <img id="screenshot3" class="screenshot" src="files/moonplayer-url.png">
+        <p>Play any online videos you want!</p>
+      </div>
+      <div id="carousel-item4" class="carousel-item">
+        <a href="#carousel-target3" class="carousel-link-left"><img src="files/prev.png"></a>
+        <a href="#carousel-target5" class="carousel-link-right"><img src="files/next.png"></a>
+        <img id="screenshot4" class="screenshot" src="files/moonplayer-danmaku.png">
+        <p>Support danmaku too!</p>
+      </div>
+      <div id="carousel-item5" class="carousel-item">
+        <a href="#carousel-target4" class="carousel-link-left"><img src="files/prev.png"></a>
+        <a href="#carousel-target6" class="carousel-link-right"><img src="files/next.png"></a>
+        <img id="screenshot5" class="screenshot" src="files/moonplayer-download.png">
+        <p>Download videos you want!</p>
+      </div>
+      <div id="carousel-item6" class="carousel-item">
+        <a href="#carousel-target5" class="carousel-link-left"><img src="files/prev.png"></a>
+        <a href="#carousel-target6" class="carousel-link-right"><img src="files/next.png"></a>
+        <img id="screenshot6" class="screenshot" src="files/moonplayer-hwdec.png">
+        <p>Full support for hardware decoding!</p>
+      </div>
+    </div>
+    <p>MoonPlayer is an video player which is</p>
+    <ul>
+      <li>Cool</li>
+      <li>Super cool</li>
+      <li>Fuckingly cool</li>
+      <li>Beautiful and lightweight</li>
+      <li>Based on MPV which supports nearly all video formats</li>
+      <li>Focusing on online videos, but also support local videos</li>
+      <li>Hackable through <a href="https://github.com/coslyk/moonplayer-plugins" class="external">plugins</a></li>
+    </ul>
+    <p>And there are many more to come.</p>
+    <h2 id="install">Installation</h2>
+    <h3>Windows / macOS</h3>
+    <p>Download from <a href="https://github.com/coslyk/moonplayer/releases/latest" class="external">Release page</a>.</p>
+    <h3>Linux</h3>
+    <p>You can either use the <a href="https://github.com/coslyk/moonplayer/releases/latest" class="external">AppImage</a>
+      or install it with <a href="https://flathub.org/apps/details/com.github.coslyk.MoonPlayer"
+        class="external">Flatpak</a>.</p>
+    <h3>Debian</h3>
+    <p>Add <a href="https://github.com/coslyk/debianopt-repo" class="external">DebianOpt</a> repository, then install with
+      <code>sudo apt install moonplayer</code>.</p>
+    <h3>ArchLinux & Manjaro</h3>
+    <p>Add <a href="https://www.archlinuxcn.org/archlinux-cn-repo-and-mirror/" class="external">ArchLinuxCN</a> repository,
+      then install with <code>pacman -S moonplayer</code>.
+    </p>
+    <h2>Browser Extensions</h2>
+    <h3>Chrome</h3>
+    <p>
+      <a href="https://chrome.google.com/webstore/detail/moonplayer-helper/kcbmjpphkbnbdmdgepjbjhiakfdeppbd"
+        class="external">Chrome Store</a>&nbsp;
+      <a href="files/moonplayer.crx" class="external">.crx file</a>
+    </p>
+      <h3>Firefox</h3>
+      <p>You can use <a href=" https://addons.mozilla.org/en-US/firefox/addon/open-with/" class="external">open
+        with</a> extension and add MoonPlayer to the right-click menu.
+    </p>
+    <h2>Development</h2>
+    <p>The source is managed on <a href="https://github.com/coslyk/moonplayer" class="external">GitHub</a>. If you encounter
+      any bugs or want to suggest improvements, please use the <a href="https://github.com/coslyk/moonplayer/issues"
+        class="external">issue tracker</a> there.</p>
+    <h2>License</h2>
+    <p>MoonPlayer is free software licensed under GPL version 3 or later. See the <a
+        href="https://github.com/coslyk/moonplayer/blob/develop/LICENSE" class="external">LICENSE</a> file for details.</p>
+   </div> 
+   <link rel="stylesheet" href="files/main.css" /> 
+  </div>
+ </body>
+</html>

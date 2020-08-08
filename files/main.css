@@ -346,7 +346,8 @@ body h1 {
 body h2 {
     font-weight: 300;
     font-size: 18pt;
-    letter-spacing: -0.05em
+    letter-spacing: -0.05em;
+    font-weight: bold
 }
 
 body h3 {
@@ -355,7 +356,7 @@ body h3 {
     margin-bottom: 1em;
     margin-left: 0;
     margin-right: 0;
-    font-weight: bold
+    font-weight: normal
 }
 
 body h4 {
@@ -394,7 +395,7 @@ body img {
 
 body a.external {
     font-size: 1rem;
-    color: #555566
+    color: #5555FF
 }
 
 body hr {
@@ -496,7 +497,7 @@ a {
     grid-area: body;
     background: var(--bg-1-level);
     color: var(--fg-color);
-    margin: auto
+    margin: auto 50px
 }
 
 table {
@@ -541,4 +542,93 @@ table thead th:first-child {
 html {
     visibility: visible;
     opacity: 1
+}
+
+div.carousel {
+    width: max-content;
+    clear: both;
+    height: 562px;
+    position: relative;
+}
+span.carousel-target {
+    display: none;
+}
+div.carousel div.carousel-item {
+    width: max-content;
+    display: none;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f6f5f4;
+}
+div.carousel #carousel-item1 {
+    display: block;
+    z-index: 1;
+}
+div.carousel #carousel-target1:target ~ #carousel-item1 {
+    display: block;
+    z-index: 2;
+}
+div.carousel #carousel-target2:target ~ #carousel-item2 {
+    display: block;
+    z-index: 2;
+}
+div.carousel #carousel-target3:target ~ #carousel-item3 {
+    display: block;
+    z-index: 2;
+}
+div.carousel #carousel-target4:target ~ #carousel-item4 {
+    display: block;
+    z-index: 2;
+}
+div.carousel #carousel-target5:target ~ #carousel-item5 {
+    display: block;
+    z-index: 2;
+}
+div.carousel #carousel-target6:target ~ #carousel-item6 {
+    display: block;
+    z-index: 2;
+}
+div.carousel a.carousel-link-left {
+    float: left;
+    display: block;
+    width: 33px;
+    height: 23px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 20px;
+    padding-left: 1px;
+    margin-top: 232px;
+    outline: none;
+}
+div.carousel a.carousel-link-right {
+    float: right;
+    display: block;
+    width: 33px;
+    height: 23px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 1px;
+    padding-left: 20px;
+    margin-top: 232px;
+    outline: none;
+}
+div.carousel div.carousel-item img.screenshot {
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    display: block;
+}
+div.carousel div.carousel-item p {
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+    color: #666;
+}
+
+code {
+    background-color: #ddd;
+    padding-left: 5pt;
+    padding-right: 5pt;
 }

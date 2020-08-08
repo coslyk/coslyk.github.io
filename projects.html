@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ <head> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+  <style>html{visibility: hidden;opacity:0;}</style> 
+  <meta charset="UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <meta name="theme-color" content="#f7f7f7" /> 
+  <title>Projects - Coslyk</title> 
+  <style>
+    .prj-grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 1rem 3rem;
+      grid-template-areas: "prj-fig prj-info" "prj-info2 prj-fig2"
+    }
+    .prj-fig { grid-area: prj-fig; }
+    .prj-fig2 { grid-area: prj-fig2; }
+    .prj-info { grid-area: prj-info; }
+    .prj-info2 { grid-area: prj-info2; }
+  </style> 
+ </head> 
+ <body> 
+  <div class="grid-container"> 
+   <div class="nav"> 
+    <div class="logo"> 
+     <img class="logo" src="files/me.png" /> 
+    </div> 
+    <div class="introduction"> 
+     <p>I'm a part-time App developer.</p> 
+    </div> 
+    <header class="header"> 
+     <input class="menu-btn" type="checkbox" id="menu-btn" /> 
+     <label class="menu-icon" for="menu-btn"><span class="navicon">⚙</span></label> 
+     <ul class="menu"> 
+      <li><a href="index.html">Home</a></li> 
+      <li><a href="projects.html">Projects</a></li> 
+      <li><a href="https://github.com/coslyk">GitHub</a></li> 
+      <li><a href="donate.html">Donate</a></li> 
+     </ul> 
+    </header> 
+    <div class="footer"> 
+     <div class="info"> 
+      <div class="copyright">
+       <b>coslyk</b> - 
+       <span id="year">2020</span>
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="body"> 
+    <h1 style="margin-top: 2rem;">PROJECTS</h1> 
+    <h2>Desktop Apps</h2> 
+    <p class="p">Apps run on your Linux, Windows and macOS.</p> 
+    <div class="prj-grid-container"> 
+     <div class="prj-fig"> 
+      <img class="card" src="files/moonplayer.png" alt="MoonPlayer" /> 
+     </div> 
+     <div class="prj-fig2"> 
+      <img class="card" src="files/bingle.png" alt="Bingle" /> 
+     </div> 
+     <div class="prj-info"> 
+      <p><span class="id-square" style="color:#555555;">█</span> <b><a href="https://coslyk.github.io/moonplayer">MoonPlayer</a></b></p> 
+      <p>An elegant video player focusing on online videos.</p> 
+      <ul> 
+       <li>Beautiful and lightweight</li> 
+       <li>Play and download videos from Youtube, Bilibili etc.</li> 
+      </ul> 
+     </div> 
+     <div class="prj-info2"> 
+      <p><span class="id-square" style="color:#AAAAAA">█</span> <b><a href="https://coslyk.github.io/bingle">Bingle</a></b></p> 
+      <p>A simple wallpaper downloader for Linux Desktop</p> 
+      <ul> 
+       <li>Fast and easy</li> 
+       <li>Currently supports Bing.com</li> 
+      </ul> 
+     </div> 
+    </div> 
+    <h2>Command line tools</h2> 
+    <p class="p">Power your development.</p> 
+    <p><span class="id-square" style="color:#ccbbaa;">█</span> <b><a href="https://github.com/coslyk/debianopt-repo">DebianOpt</a></b></p> 
+    <p>3rd-party Debian repository that powers your Debian Linux.</p> 
+    <ul> 
+     <li>Make your software installation easier</li> 
+     <li>Safe, compatible with the official repository</li> 
+     <li>Automated package updates and builds</li> 
+    </ul> 
+    <p><span class="id-square" style="color:#c6262e;">█</span> <b><a href="https://github.com/coslyk/macos-qt-deploy">macos-qt-deploy</a></b></p> 
+    <p>Deploy your Qt program for macOS.</p> 
+    <ul> 
+     <li>Extends the Qt's <code>macdeployqt</code> tool</li> 
+     <li>Also deploys homebrewed libraries</li> 
+    </ul> 
+    <p><span class="id-square" style="color:#AFD4A1;">█</span> <b><a href="https://github.com/coslyk/homebrew-mpv">homebrew-mpv</a></b></p> 
+    <p>Homebrew Taps for installing libmpv.</p>
+    <ul> 
+     <li>Install libmpv with less dependencies</li> 
+    </ul> 
+    <div style="margin-bottom: 50px;"></div> 
+   </div> 
+   <link rel="stylesheet" href="files/main.css" /> 
+  </div>
+ </body>
+</html>

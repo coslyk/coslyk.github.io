@@ -562,7 +562,7 @@ div.carousel div.carousel-item {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #f6f5f4;
+    background: var(--bg-1-level);
 }
 div.carousel #carousel-item1 {
     display: block;

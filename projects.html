@@ -12,14 +12,16 @@
     .prj-grid-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
       grid-gap: 1rem 3rem;
-      grid-template-areas: "prj-fig prj-info" "prj-info2 prj-fig2"
+      grid-template-areas: "prj-fig prj-info" "prj-info2 prj-fig2" "prj-fig3 prj-info3"
     }
     .prj-fig { grid-area: prj-fig; }
     .prj-fig2 { grid-area: prj-fig2; }
+    .prj-fig3 { grid-area: prj-fig3; }
     .prj-info { grid-area: prj-info; }
     .prj-info2 { grid-area: prj-info2; }
+    .prj-info3 { grid-area: prj-info3; }
   </style> 
  </head> 
  <body> 
@@ -56,10 +58,13 @@
       <img class="card" src="files/moonplayer.png" alt="MoonPlayer" /> 
      </div> 
      <div class="prj-fig2"> 
+      <img class="card" src="files/videosplitter.png" alt="Video Splitter" /> 
+     </div> 
+     <div class="prj-fig3"> 
       <img class="card" src="files/bingle.png" alt="Bingle" /> 
      </div> 
      <div class="prj-info"> 
-      <p><span class="id-square" style="color:#555555;">█</span> <b><a href="moonplayer.html">MoonPlayer</a></b></p> 
+      <p><span class="id-square" style="color:#f37329;">█</span> <b><a href="moonplayer.html">MoonPlayer</a></b></p> 
       <p>An elegant video player focusing on online videos.</p> 
       <ul> 
        <li>Beautiful and lightweight</li> 
@@ -67,8 +72,17 @@
       </ul> 
      </div> 
      <div class="prj-info2"> 
-      <p><span class="id-square" style="color:#AAAAAA">█</span> <b><a href="bingle.html">Bingle</a></b></p> 
-      <p>A simple wallpaper downloader for Linux Desktop</p> 
+      <p><span class="id-square" style="color:#667885">█</span> <b><a href="videosplitter.html">Video Splitter</a></b></p> 
+      <p>Split your videos losslessly and conveniently.</p> 
+      <ul> 
+       <li>Very easy to use</li>
+       <li>Lossless cutting of most video formats</li>
+       <li>Cut video into multiple segments</li>
+      </ul> 
+     </div>
+     <div class="prj-info3"> 
+      <p><span class="id-square" style="color:#de3e80">█</span> <b><a href="bingle.html">Bingle</a></b></p> 
+      <p>A simple wallpaper downloader for Linux Desktop.</p> 
       <ul> 
        <li>Fast and easy</li> 
        <li>Currently supports Bing.com</li> 
@@ -95,12 +109,7 @@
     <ul> 
      <li>Extends the Qt's <code>macdeployqt</code> tool</li> 
      <li>Also deploys homebrewed libraries</li> 
-    </ul> 
-    <p><span class="id-square" style="color:#AFD4A1;">█</span> <b><a href="https://github.com/coslyk/homebrew-mpv">homebrew-mpv</a></b></p> 
-    <p>Homebrew Taps for installing libmpv.</p>
-    <ul> 
-     <li>Install libmpv with less dependencies</li> 
-    </ul> 
+    </ul>
     <div style="margin-bottom: 50px;"></div> 
    </div> 
    <link rel="stylesheet" href="files/main.css" /> 

@@ -547,7 +547,7 @@ html {
 div.carousel {
     width: max-content;
     clear: both;
-    height: 562px;
+    height: 520px;
     position: relative;
 }
 span.carousel-target {
